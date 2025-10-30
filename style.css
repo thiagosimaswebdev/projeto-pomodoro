@@ -280,37 +280,6 @@ footer .footer-container .social-icons a:hover img {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
   }
-  .boxsobre {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 1rem;
-    height: auto;
-    gap: 300px;
-  }
-  .boxsobre .textos {
-    width: 90vw;
-    text-align: center;
-  }
-  .boxsobre .textos h2 {
-    width: 100%;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-  .boxsobre .textos p {
-    width: 100%;
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-  .boxsobre iframe, .boxsobre video {
-    width: 100vw;
-    max-width: 800px;
-    height: 30vh;
-    border-radius: 10px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    display: block;
-  }
   footer {
     flex-direction: column;
     height: auto;

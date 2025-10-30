@@ -341,41 +341,77 @@ footer {
     }
   }
 
+  // .boxsobre {
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  //   padding: 2rem 1rem;
+  //   height: auto;
+  //   gap: 300px;
+
+  //   .textos {
+  //     width: 90vw;
+  //     text-align: center;
+
+  //     h2 {
+  //       width: 100%;
+  //       font-size: 1.8rem;
+  //       margin-bottom: 1rem;
+  //     }
+
+  //     p {
+  //       width: 100%;
+  //       font-size: 1.2rem;
+  //       line-height: 1.6;
+  //     }
+  //   }
+
+  //   iframe, video {
+  //     width: 100vw;
+  //     max-width: 800px;
+  //     height: 30vh;
+  //     border-radius: 10px;
+  //     margin: 0 auto;
+  //     padding: 0 1rem;
+  //     display: block;
+  //   }
+  // }
+
   .boxsobre {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 1rem;
-    height: auto;
-    gap: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 3rem 5vw;
+  background-color: $bg-color; // mantém o fundo original
+  flex-wrap: wrap; // permite quebrar no notebook
 
-    .textos {
-      width: 90vw;
-      text-align: center;
+  .textos {
+    flex: 1 1 400px; // largura mínima para texto
+    max-width: 600px;
+    text-align: justify;
 
-      h2 {
-        width: 100%;
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-      }
-
-      p {
-        width: 100%;
-        font-size: 1.2rem;
-        line-height: 1.6;
-      }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
     }
 
-    iframe, video {
-      width: 100vw;
-      max-width: 800px;
-      height: 30vh;
-      border-radius: 10px;
-      margin: 0 auto;
-      padding: 0 1rem;
-      display: block;
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
     }
   }
+
+  iframe, video {
+    flex: 1 1 400px; // mantém proporção e quebra suave
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    border: 2px solid #00000022;
+  }
+}
 
   footer {
     flex-direction: column;
